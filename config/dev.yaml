@@ -1,0 +1,34 @@
+ident: "search-service"
+pod_id: "e2d780f5-b55e-4a93-856b-4880204f99ad"
+
+log:
+  filter: 0
+  caller: true
+  output: "output"
+
+mysql:
+  dsn: "root:password@tcp(139.180.147.194:7000)/tgbot?charset=utf8mb4&parseTime=True&loc=Local"
+
+elasticsearch:
+  address:
+    - http://139.180.147.194:7001
+  username: "elastic"
+  password: "password"
+
+nats:
+  address:
+    - http://139.180.147.194:4222
+    - http://139.180.147.194:4223
+    - http://139.180.147.194:4224
+  username: ""
+  password: ""
+  token: "mysecrettoken"
+
+redis:
+  address: "139.180.147.194:8765"
+  password: "password"
+  db: 0
+
+web:
+  prefix: "/v1"
+  address: "0.0.0.0:9000"

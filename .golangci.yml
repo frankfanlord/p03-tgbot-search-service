@@ -1,0 +1,10 @@
+linters:
+  enable:
+    - staticcheck
+
+exclude:
+  - "S1009"  # 忽略 “len(nil slice)” 的 nil 检查提示
+  - "fieldalignment"     # 结构体字段对齐建议
+  - "should have comment" # 缺少注释
+  - "SA4010"
+  - "SA4010"
